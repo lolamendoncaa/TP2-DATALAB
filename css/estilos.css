@@ -1,0 +1,165 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;1,800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@font-face {
+
+    src: url('https://raw.githubusercontent.com/google/fonts/main/ofl/montserratalternates/MontserratAlternates-Regular.ttf');
+    font-family: 'miFuente';
+    font-weight: 700;
+
+
+}
+
+
+body {
+
+    font-family: "Barlow";
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #052a27;
+
+}
+
+header, nav, footer { width:100%;}
+
+footer {
+margin-top: 10px;
+background-color: #004745;
+color: white;
+padding: 10px;
+font-size: 20px;
+
+}
+
+header {
+    height: 140px;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align:center;
+
+}
+
+nav {
+
+    background-color: #5e949c;
+    padding: 10px;
+    display: flex;                 
+    justify-content: center;   
+      
+}
+
+nav a {
+text-decoration: none;
+color: #ffffff;
+font-weight: 400;
+margin: 20px;
+animation-name: cambioColor;
+animation-duration: 2s;
+animation-timing-function: linear
+}
+
+@keyframes cambioColor {
+    0% { color: #272727; }
+    100% { color: #ffffff; }
+  }
+
+
+h1 { font-family:miFuente;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 4px rgba(15, 96, 110, 0.985);
+    font-size: 40px;
+}
+
+h2 { font-family: "DM Sans";
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+h3 { font-family:miFuente;
+    font-size: 20px;
+
+}
+
+h2, h3, h4 {
+    animation-name: aparecer;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(5);
+  }
+
+p{
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 20px
+    
+}
+
+p2{
+    font-family: "Barlow";
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    font-size: 16px
+
+}
+
+
+
+
+@keyframes aparecer {
+
+0% {opacity: 0;}
+100% { opacity: 1;}
+
+
+}
+
+#grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px 15px;
+    width: 90%;
+    margin: 0 auto;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+img {
+
+    width: 100%;
+    border-radius: 7px;
+    transition: all 0.3s linear;
+}
+
+img:hover {
+box-shadow: 0 0 30px rgba(11, 235, 255, 0.798);
+transform: scale(1.10);
+
+
+}
+
+
+.proyecto {
+width: 300px;
+background-color: rgb(149, 211, 211);
+border: 1px solid #abdfe6;
+border-radius: 20px;
+padding: 25px;
+transition: all 0.1s linear; 
+
+}
+
+
+.proyecto:hover {
+box-shadow: 0 0 10px rgb(63, 177, 173);
+transform: scale(1.08);
+}
+
+#servicios {
+margin-top: 10px;
+display: flex;
+justify-content: space-between;
+
+
+}
